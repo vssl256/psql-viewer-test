@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="186.0" prefWidth="235.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vessel.LoginController">
+   <children>
+      <TextField fx:id="hostTextField" layoutX="149.0" layoutY="14.0" promptText="localhost" AnchorPane.rightAnchor="14.0">
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding>
+      </TextField>
+      <TextField fx:id="portTextField" layoutX="149.0" layoutY="39.0" promptText="5432" AnchorPane.rightAnchor="14.0">
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding>
+      </TextField>
+      <TextField fx:id="userTextField" layoutX="149.0" layoutY="64.0" AnchorPane.rightAnchor="14.0">
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding>
+      </TextField>
+      <PasswordField fx:id="passwordField" layoutX="149.0" layoutY="89.0" AnchorPane.rightAnchor="14.0">
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding>
+      </PasswordField>
+      <TextField fx:id="dbTextField" layoutX="149.0" layoutY="114.0" AnchorPane.rightAnchor="14.0">
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding>
+      </TextField>
+      <Text layoutX="11.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Host" AnchorPane.leftAnchor="14.0" />
+      <Text layoutX="13.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Port" AnchorPane.leftAnchor="14.0" />
+      <Text layoutX="12.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" AnchorPane.leftAnchor="14.0" />
+      <Text layoutX="14.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password*" AnchorPane.leftAnchor="14.0" />
+      <Text layoutX="12.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Database" AnchorPane.leftAnchor="14.0" />
+      <Button fx:id="loginBtn" layoutX="186.0" layoutY="136.0" mnemonicParsing="false" text="Log In" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+   </children>
+</AnchorPane>
