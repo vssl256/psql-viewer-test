@@ -6,8 +6,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="186.0" prefWidth="235.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vessel.LoginController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="186.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vessel.LoginController">
    <children>
       <TextField fx:id="hostTextField" layoutX="149.0" layoutY="14.0" promptText="localhost" AnchorPane.rightAnchor="14.0">
          <padding>
@@ -19,7 +18,7 @@
             <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
          </padding>
       </TextField>
-      <TextField fx:id="userTextField" layoutX="149.0" layoutY="64.0" AnchorPane.rightAnchor="14.0">
+      <TextField fx:id="userTextField" layoutX="149.0" layoutY="64.0" onKeyTyped="#usernameTypeCheck" promptText="postgres" AnchorPane.rightAnchor="14.0">
          <padding>
             <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
          </padding>
@@ -29,7 +28,7 @@
             <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
          </padding>
       </PasswordField>
-      <TextField fx:id="dbTextField" layoutX="149.0" layoutY="114.0" AnchorPane.rightAnchor="14.0">
+      <TextField fx:id="dbTextField" layoutX="149.0" layoutY="114.0" promptText="postgres" AnchorPane.rightAnchor="14.0">
          <padding>
             <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
          </padding>

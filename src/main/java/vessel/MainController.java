@@ -33,13 +33,13 @@ public class MainController {
         this.db = db;
     }
 
-    @FXML private Button loginBtn;
+    @FXML private Button connectBtn;
     @FXML private TableView<ObservableList<String>> tableView;
     @FXML private ComboBox<String> comboBox;
 
     @FXML
     private void initialize() throws SQLException {
-        loginBtn.setOnAction(event -> loginWindow());
+        connectBtn.setOnAction(event -> loginWindow());
         comboBox.setOnAction(event -> {
             String table = comboBox.getValue();
             if (table != null) {

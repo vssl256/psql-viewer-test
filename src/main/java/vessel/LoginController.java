@@ -5,7 +5,6 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import javafx.scene.image.Image;
 
 public class LoginController {
     @FXML private Button loginBtn;
@@ -26,7 +25,14 @@ public class LoginController {
     public void setMainController(MainController mainController) {
         this.mainController = mainController;
     }
-
+    @FXML
+    private void usernameTypeCheck() {
+        if (!userTextField.getText().isEmpty()) dbTextField.promptTextProperty().bind(userTextField.textProperty());
+        else {
+            dbTextField.promptTextProperty().unbind();
+            dbTextField.setPromptText(userTextField.getPromptText());
+        }
+    }
     @FXML
     private void initialize() {
         loginBtn.setOnAction(event -> {

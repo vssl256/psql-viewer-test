@@ -1,0 +1,3 @@
+@echo on
+rd /s /q jre-win PSQLView-win
+jlink --module-path "%JAVA_HOME%\jmods;C:\Java\zulu11\bin\javafx" --add-modules java.base,javafx.controls,javafx.fxml,javafx.graphics --output jre-win --strip-debug --compress=2 --no-header-files --no-man-pages && java -jar packr-all-4.0.0.jar --platform windows64 --jdk jre-win --executable PSQLView --classpath dbtest.jar --mainclass vessel.Main --output PSQLView-win
